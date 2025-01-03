@@ -8,7 +8,7 @@ import './index.css';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-document.title = "Synergyplus";
+document.title = "CROcharge";
 
 root.render(
   <React.StrictMode>

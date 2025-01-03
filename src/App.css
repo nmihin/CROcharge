@@ -1,3 +1,7 @@
+.App-content {
+  padding: 20px 0 !important;
+}
+
 .material-clay::before {
     content: '';
     display: inline-block;

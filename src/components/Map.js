@@ -875,8 +875,8 @@ function Map() {
       <section id="filter-data">
       <div className="row">
         {/* FILTER */}
-        <div className="col-md-12 z-10">
-            <InputGroup className="pl-4 pr-4 pt-4">
+        <div className="z-10 col-md-12">
+            <InputGroup className="pt-4 pl-4 pr-4">
               <InputGroup.Text>    <FaSearch /></InputGroup.Text>
 
               <FormControl
@@ -889,7 +889,7 @@ function Map() {
             </InputGroup>
             {predictions.length > 0 && (
               <ul
-                className="list-group position-absolute w-full pl-4 pr-4"
+                className="w-full pl-4 pr-4 list-group position-absolute"
               >
                 {predictions.map((prediction) => (
                   <li
@@ -905,11 +905,11 @@ function Map() {
             )}
         </div>
         {/* ORDER */}
-        {/* <div className="col-md-12 mt-4">
+        {/* <div className="mt-4 col-md-12">
       <h5>Odaberi sirovine</h5>
       <Form>
         {materials.map((item, index) => (
-          <Form.Group as={Row} key={index} className="mb-3 align-items-center pr-4">
+          <Form.Group as={Row} key={index} className="pr-4 mb-3 align-items-center">
             <Col md={8} className="relative">
             <div
                 style={{
@@ -924,7 +924,7 @@ function Map() {
                   margin: 'auto'
                 }}
               ></div>
-              <Form.Label className="pl-8 float-left mb-0" style={{ fontSize: '14px', lineHeight: '1', textAlign: 'left' }}>
+              <Form.Label className="float-left pl-8 mb-0" style={{ fontSize: '14px', lineHeight: '1', textAlign: 'left' }}>
                 {item.material}
               </Form.Label>
             </Col>
@@ -942,13 +942,13 @@ function Map() {
             </Col>
           </Form.Group>
         ))}
-        <div className="row pl-4 pr-4">
-          <div className="col-md-12 z-10">
+        <div className="pl-4 pr-4 row">
+          <div className="z-10 col-md-12">
             <Button className="w-full mb-2" variant="primary" onClick={createOptimizedRoute}>
               Kreiraj optimiziranu rutu
             </Button>
           </div>
-          <div className="col-md-12 z-10">
+          <div className="z-10 col-md-12">
             <Button className="w-full" variant="secondary" onClick={createOrder}>
               Kreiraj narudžbu
             </Button>
@@ -958,7 +958,7 @@ function Map() {
     </div> */}
         </div>
       </section>
-      <div id="map" style={{ width: '100%', height: '800px' }}></div>
+      <div id="map" style={{ width: '100%', height: '950px' }}></div>
       {/* Layer control panel */}
       <div
         className="absolute p-4 bg-white rounded-md shadow-lg top-4 right-4"
