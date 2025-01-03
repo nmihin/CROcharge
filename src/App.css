@@ -1,0 +1,111 @@
+.material-clay::before {
+    content: '';
+    display: inline-block;
+    width: 8px; /* Circle size (double the desired radius of 4px) */
+    height: 8px; /* Circle size (double the desired radius of 4px) */
+    border-radius: 50%; /* Makes the shape circular */
+    background-color: #D2691E; /* Light brown for Keramička i vatrostalna glina */
+    margin-right: 4px; /* 4px space between the circle and the text */
+  }
+  
+  .material-stone::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #808080; /* Gray for Tehničko-građevni kamen */
+    margin-right: 4px;
+  }
+  
+  .material-sand::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #F4A300; /* Beige for Građevni pijesak i šljunak */
+    margin-right: 4px;
+  }
+  
+  .material-brick::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #B74A2E; /* Red for Ciglarska glina */
+    margin-right: 4px;
+  }
+  
+  .material-mineral::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4CAF50; /* Optional green color for Karbonatne mineralne sirovine */
+    margin-right: 4px;
+  }
+
+  .material-red::before {
+    content: '';
+    display: inline-block;
+    width: 8px; /* Circle size (double the desired radius of 4px) */
+    height: 8px; /* Circle size (double the desired radius of 4px) */
+    border-radius: 50%; /* Makes the shape circular */
+    background-color:red; /* Light brown for Keramička i vatrostalna glina */
+    margin-right: 4px; /* 4px space between the circle and the text */
+  }
+  
+  .material-orange::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: orange; /* Gray for Tehničko-građevni kamen */
+    margin-right: 4px;
+  }
+  
+  .material-yellow::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: yellow; /* Beige for Građevni pijesak i šljunak */
+    margin-right: 4px;
+  }
+  
+  .material-green::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: green; /* Red for Ciglarska glina */
+    margin-right: 4px;
+  }
+  
+
+  #filter-data {
+    position: absolute;
+    left: 0;
+    width: 400px;
+    /* background-color: #e5e5e5; */
+    height: 100%;
+    z-index: 1;
+    /* opacity: 0.35; */
+    transition: opacity 0.3s ease-in-out; /* Add transition for opacity */
+  }
+  
+  #filter-data:hover {
+    opacity: 1;
+  }
+
+  #filter-data .list-group {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
